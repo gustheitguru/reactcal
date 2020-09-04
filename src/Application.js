@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from './componet/Button';
+import Button from './component/Button';
 
 class Application extends Component {
      constructor(props) {
@@ -46,7 +46,7 @@ class Application extends Component {
                     <input className="result" type="text" value={this.state.current} />
                    
                    {buttons.map((btn, i)=>{
-                    return <button symbol={btn.symbol} cols={btn.cols} action={(symbol)=> btn.action} >{btn.symbol}</button>
+                    return <Button symbol={btn.symbol} cols={btn.cols} action={(symbol)=> btn.action} />
                    })}
                </div>
           );
