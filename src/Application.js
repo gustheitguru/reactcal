@@ -51,7 +51,8 @@ class Application extends Component {
 
      render () {
           const buttons = [
-               {symbol: 'C', cols:3, action: this.reset},
+               {symbol: 'AC', cols:3, action: this.reset},
+               {symbol: 'C', cols:3, action: this.clearLast},
                {symbol: '%', cols:1, action: this.addToCurrent},
                {symbol: '7', cols:1, action: this.addToCurrent},
                {symbol: '8', cols:1, action: this.addToCurrent},
